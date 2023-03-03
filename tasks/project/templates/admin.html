@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Admin
+{% endblock %}
+
+{% block main %}
+    <div class="forum">
+        <form action="/register" method="post" class="form">
+            <h3> Register User</h3>
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="admin_input" name="username" placeholder="Username" type="text">
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="admin_input" name="password" placeholder="Password" type="password">
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="admin_input" name="confirmation" placeholder="Password Again" type="password">
+            </div>
+            <button class="btn btn-primary" type="submit" name="regist_me" value="regist_me">Register</button>
+        </form>
+    
+    
+        <form action="/setmoney" method="post" class="form">
+            <h3> Set Money</h3>
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="admin_input" name="setname" placeholder="Username" type="text">
+            </div>
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="admin_input" name="setvalue" placeholder="- +" type="number">
+            </div>       
+            <button class="btn btn-primary" type="submit" name="set" value="set">Set</button>
+        </form>
+    
+        <form action="/delete" method="post" class="form">
+            <h3> Delete User</h3>
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="admin_input" name="deleteusername" placeholder="Username" type="text">
+            </div>       
+            <button class="btn btn-primary" type="submit" name="delete_me" value="delete_me">Delete</button>
+        </form>
+    </div>
+    
+    <table>
+        <h3> Users Table</h3>
+        <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Cash</th>
+        </tr>
+        {% for i in admin_db %}
+        <tr>
+                <td>{{ i["id"] }}</td>
+                <td>{{ i["username"] }}</td>
+                <td>{{ i["cash"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+{% endblock %}

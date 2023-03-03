@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    index
+{% endblock %}
+
+{% block main %}
+<table>
+        <tr>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+
+        </tr>
+        {% for i in result%}
+        <tr>
+                <td>{{ i["name"] }}</td>
+                <td>{{ i["symbol"] }}</td>
+                <td>{{ i["sumShares"] }}</td>
+                <td>{{ usd(i["price"]) }}</td>
+                <td>{{ usd(i["sumShares"] * i["price"]) }}</td>
+
+        </tr>
+        {% endfor %}
+        <tr>
+                <td> Cash</td>
+                <td colspan="3"></td>
+                <td> {{ usd(pocket) }}</td>
+        </tr>
+        <tr>
+                <td> Total</td>
+                <td colspan="3"></td>
+                <td id =total_cash>{{ usd(cashed) }}</td>
+        </tr>
+</table>
+
+{% endblock %}
