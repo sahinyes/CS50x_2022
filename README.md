@@ -3,7 +3,6 @@
     <p> 2022</p>
     <h1> Harvard CS50x: Introduction to Computer Science </h1>
 </div>
-https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/800px-Harvard_University_coat_of_arms.svg.png
 <div align=center>
     <a href="https://cs50.harvard.edu/x/2022/">Course Link</a> |
     <a href="https://github.com/5ah1n/CS50x_2022/tree/main/tasks/project">Final Project</a> |
