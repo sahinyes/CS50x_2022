@@ -1,6 +1,5 @@
 <div align=center>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/800px-Harvard_University_coat_of_arms.svg.png
-" height=250>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/800px-Harvard_University_coat_of_arms.svg.png" height=250>
     <p> 2022</p>
     <h1> Harvard CS50x: Introduction to Computer Science </h1>
 </div>
@@ -11,6 +10,7 @@ https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coa
     <a href="https://github.com/5ah1n/cs50_python">CS50 Python</a> |
     <a href="https://certificates.cs50.io/e5838d71-4a3d-48fb-8252-a80cd12848f3.pdf?size=letter">Certification </a> |
 </div>
+
 <br>
 
 ⚖️ [<em>Academical honesty</em>](https://cs50.harvard.edu/x/2023/honesty/)
